@@ -1,7 +1,12 @@
 package com.example.quiz
 
 //放所有的常數
+//若都是static function跟變數，使用object較方便簡潔
 object Constants {
+
+    const val USER_NAME: String = "user_name"
+    const val TOTAL_QUESTIONS: String = "total_questions"
+    const val CORRECT_ANSWERS: String = "correct_questions"
 
     // TODO (STEP 5: Create a Constants Object.)
     // START
