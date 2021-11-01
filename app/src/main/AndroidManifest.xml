@@ -11,17 +11,19 @@
         android:theme="@style/Theme.Quiz">
         <activity
             android:name=".ResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoactionBar"
             android:exported="true" />
         <activity
             android:name=".QuizQuestionActivity"
             android:exported="true"
+            android:theme="@style/NoactionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
-            android:windowSoftInputMode="adjustResize">
+            android:theme="@style/NoactionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

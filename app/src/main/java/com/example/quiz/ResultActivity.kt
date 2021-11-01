@@ -1,5 +1,6 @@
 package com.example.quiz
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.quiz.databinding.ActivityResultBinding
@@ -12,5 +13,17 @@ class ResultActivity : AppCompatActivity() {
         //setContentView(R.layout.activity_result)
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.tvName.text = intent.getStringExtra(Constants.USER_NAME)
+
+        val totalQuestions = intent.getIntExtra(Constants.TOTAL_QUESTIONS, 0)
+        val correctAnswers = intent.getIntExtra(Constants.CORRECT_ANSWERS, 0)
+
+        binding.tvScore.text = "Your Score is $correctAnswers out of $totalQuestions"
+
+        binding.btnFinish.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+
     }
 }

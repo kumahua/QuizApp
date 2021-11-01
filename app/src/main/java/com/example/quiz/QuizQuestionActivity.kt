@@ -112,9 +112,7 @@ class QuizQuestionActivity : AppCompatActivity(), OnClickListener {
             //Adding a click event for submit button. And change the questions and check the selected answers.
             binding.btnSubmit.id -> {
                 if(mSelectedOptionPosition == 0) {
-
                     mCurrentPosition++
-
                     when {
                         mCurrentPosition <= mQuestionsList.size -> {
                             setQuestion()
