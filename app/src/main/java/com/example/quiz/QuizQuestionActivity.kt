@@ -73,6 +73,7 @@ class QuizQuestionActivity : AppCompatActivity(), OnClickListener {
     }
 
     private fun defaultOptionsView() {
+        //創建空的TextView型態的ArrayList
         val options = ArrayList<TextView>()
 
         options.add(0, binding.tvOptionOne)

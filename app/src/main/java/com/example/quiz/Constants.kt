@@ -10,7 +10,7 @@ object Constants {
 
     // TODO (STEP 5: Create a Constants Object.)
     // START
-    //取得所有ArrayList形式的Question
+    //取得所有ArrayList型態的Question
     fun getQuestions(): ArrayList<Question> {
 
         // TODO (STEP 6: 使用 Question data class 建立問題列表，並將所有國旗照片添加到 drawable文件夾中以將其添加到列表中)
